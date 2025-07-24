@@ -13,8 +13,8 @@ const ButtonHover = ({ children, href, Content, className }) => {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       className="group h-fit w-fit hover:bg-gray-200 rounded-sm transition px-3 py-1">
-      <button href={href}>
-        <span className={className}>{children}</span>
+      <button className={className} href={href}>
+        {children}
       </button>
       {showDropdown && (
         <motion.div

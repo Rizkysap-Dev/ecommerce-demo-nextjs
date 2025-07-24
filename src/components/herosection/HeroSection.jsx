@@ -28,7 +28,7 @@ const HeroSection = () => {
                     y: "100%",
                   }}
                   transition={{ duration: 1.5, delay: index * 0.2 }}
-                  className="text-6xl whitespace-nowrap p-0 text-center font-playfair font-semibold text-gray-950 pr-5">
+                  className="text-6xl p-0 text-center font-playfair font-semibold text-gray-950 pr-5">
                   {char}
                 </motion.h1>
               );
@@ -47,15 +47,29 @@ const HeroSection = () => {
               duration: 0.8,
               delay: 0.5,
             }}
-            className="text-2xl font-playfair leading-tight tracking-tighter text-justify font-medium text-gray-800">
-            -- Fashion is the silent language that lets your soul shine,Casual
+            className="text-2xl font-playfair text-justify font-medium text-gray-800 tracking-tighter">
+            -- Fashion is the silent language that lets your soul shine, Casual
             fashion, effortlessly cool.
           </motion.h1>
           <div className="mt-5 pl-1">
             <UnderlineButton
               className={"text-sm font-light text-gray-700"}
               href={"/shop"}>
-              Shop Now
+              <motion.h5
+                animate={{
+                  y: "0%",
+                  opacity: 1,
+                }}
+                initial={{
+                  y: "100%",
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.5,
+                }}>
+                Shop All
+              </motion.h5>
             </UnderlineButton>
           </div>
         </div>

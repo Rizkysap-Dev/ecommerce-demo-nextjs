@@ -1,15 +1,23 @@
-import Container from '../Container'
-import Navbar from './navbar/Navbar'
+"use client";
 
-const Layout = ({children}) => {
+import { useState } from "react";
+import Navbar from "./navbar/Navbar";
+import SplashScreen from "../ui/SplashScreen";
+import Container from "../Container";
+
+const Layout = ({ children }) => {
+  const [showSplash, setShowSplash] = useState(true);
   return (
     <div>
-        <Navbar />
-        <Container>
-            {children}
-        </Container>
+      {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
+      {!showSplash && (
+        <div>
+          <Navbar />
+          <Container>{children}</Container>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
