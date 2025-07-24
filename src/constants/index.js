@@ -29,3 +29,10 @@ export const linkNavbar = [
         ]
     },
 ]
+
+export const linkNavbarImg = [
+    { src : 'https://images.unsplash.com/photo-1716827172675-6a3030fd1560?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Qunix Casual Women' },
+    {src : 'https://images.unsplash.com/photo-1665832102823-166094d10e27?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' , alt: 'Qunix women'},
+    {src: 'https://images.unsplash.com/photo-1559038295-f32f4d5bb27c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt: 'Qunix Casual Men'}
+
+]
