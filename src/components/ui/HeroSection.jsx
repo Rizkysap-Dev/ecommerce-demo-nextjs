@@ -27,7 +27,7 @@ const HeroSection = () => {
                   initial={{
                     y: "100%",
                   }}
-                  transition={{ duration: 1.5, delay: index * 0.2 }}
+                  transition={{ duration: 1.2, delay: index * 0.2 }}
                   className="text-6xl p-0 text-center font-playfair font-semibold text-gray-950 pr-5">
                   {char}
                 </motion.h1>

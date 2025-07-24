@@ -47,7 +47,6 @@ const SearchNavbar = () => {
                     <Link
                       key={index}
                       href={"/shop/"}
-                      n
                       className="flex justify-start items-center rounded-lg cursor-pointer hover:bg-gray-200 h-26">
                       <div className="h-full w-18 p-1 overflow-hidden rounded-lg cursor-pointer">
                         <img

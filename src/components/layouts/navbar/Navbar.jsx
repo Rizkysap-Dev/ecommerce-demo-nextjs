@@ -13,9 +13,9 @@ import SearchNavbar from "./ui/SearchNavbar";
 
 const Navbar = () => {
   return (
-    <div className="relative">
+    <div className="w-full">
       <Container>
-        <div className="flex items-center justify-between py-5 relative">
+        <div className="flex items-center justify-between py-4 relative">
           <LogoAnimation href={"/"}>Qunix</LogoAnimation>
           <nav className="flex justify-start items-center">
             <ul className="flex justify-center items-center space-x-4">
