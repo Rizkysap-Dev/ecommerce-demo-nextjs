@@ -56,23 +56,6 @@ const Navbar = () => {
           <div>
             <div>
               <SearchNavbar />
-              {/* <div>
-                            <ButtonHover href="/about"   Content={
-                                    <div className='w-full px-8 py-5'>
-                                        <input className='w-full py-1 px-3 border border-gray-700 rounded-lg' type="text" placeholder="search" />
-                                        <div className='grid grid-cols-2 space-x-1 pt-3'>
-                                            <div className='mt-2'>
-                                                <h3 className='text-gray-900 '>Trending</h3>
-                                                <div className='flex justify-start items-center space-x-2 mt-2'>
-                                                    <Link className='text-[10px] font-light py-1 px-3 rounded-sm hover:shadow bg-gray-300' href={'/shop/'}>Men's Jeans</Link>
-                                                </div>
-                                            </div>
-                                    
-                                        </div>
-                                    </div>
-                                } 
-                            >Search</ButtonHover>
-                        </div> */}
             </div>
           </div>
         </div>

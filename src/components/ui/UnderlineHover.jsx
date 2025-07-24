@@ -15,7 +15,7 @@ const UnderlineHover = ({ children, href, Content }) => {
       onMouseLeave={() => setOpen(false)}
       className="group h-fit w-fit">
       <Link href={href} className="relative">
-        <span>{children}</span>
+        <span className="font-medium">{children}</span>
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",

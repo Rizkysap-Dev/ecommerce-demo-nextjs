@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const ButtonHover = ({ children, href, Content }) => {
+const ButtonHover = ({ children, href, Content, className }) => {
   const [open, setOpen] = React.useState(false);
 
   const showDropdown = open && Content;
@@ -14,7 +14,7 @@ const ButtonHover = ({ children, href, Content }) => {
       onMouseLeave={() => setOpen(false)}
       className="group h-fit w-fit hover:bg-gray-200 rounded-sm transition px-3 py-1">
       <button href={href}>
-        <span>{children}</span>
+        <span className={className}>{children}</span>
       </button>
       {showDropdown && (
         <motion.div

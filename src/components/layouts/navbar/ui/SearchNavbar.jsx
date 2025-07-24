@@ -4,41 +4,33 @@ import Link from "next/link";
 import { linkNavbarImg } from "@/constants";
 import { motion } from "framer-motion";
 import UnderlineButton from "@/components/ui/UnderlineButton";
+import { LuSearch } from "react-icons/lu";
 
 const SearchNavbar = () => {
   return (
     <div>
       <ButtonHover
+        className={"font-medium"}
         href="/about"
         Content={
           <div className="w-full px-8 pb-5 pt-2">
             <div className="relative">
               <input
-                type="email"
+                type="text"
                 className="w-full placeholder:text-slate-400 text-slate-700 text-sm rounded-md pl-3 pr-10 py-2 transition duration-300 ease focus:outline-none bg-gray-200 focus:shadow"
                 placeholder="Search for products, brands and more"
               />
               <button
                 className="absolute right-1 top-[3px] rounded-lg bg-slate-100 p-1.5 border border-transparent text-center text-sm transition-all focus:bg-slate-200 hover:shadow  active:bg-slate-200 hover:bg-slate-200 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
                 type="button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  class="w-4 h-4">
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <LuSearch />
               </button>
             </div>
             <div className="grid grid-cols-7 space-x-1 px-2 pt-2">
               <div className="mt-2 col-span-3">
                 <div>
                   <div>
-                    <h3 className="font-extrabold tracking-wider text-gray-800">
+                    <h3 className="font-extrabold font-playfair tracking-wider text-gray-800">
                       Trending
                     </h3>
                     <div className="grid grid-cols-3 gap-1 mt-2 pr-5">
@@ -65,7 +57,7 @@ const SearchNavbar = () => {
                         />
                       </div>
                       <div className="p-2 h-full flex flex-col justify-between ml-2 pb-10">
-                        <h3 className="text-sm font-semibold text-gray-800">
+                        <h3 className="text-sm font-playfair font-semibold text-gray-800">
                           {item.alt}
                         </h3>
                         <h4 className="font-light text-xs text-gray-600">
@@ -84,7 +76,7 @@ const SearchNavbar = () => {
                 </div>
               </div>
               <div className="mt-2 col-span-4">
-                <h3 className="font-extrabold tracking-wider text-gray-800">
+                <h3 className="font-extrabold font-playfair tracking-wider text-gray-800">
                   Most View
                 </h3>
                 <div className="grid grid-cols-3 gap-6 mt-2 pr-5">
