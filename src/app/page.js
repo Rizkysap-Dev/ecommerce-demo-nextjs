@@ -1,5 +1,4 @@
 import Layout from "@/components/layouts/Layout";
-import Container from "@/components/Container";
 import HeroSection from "@/components/herosection/HeroSection";
 
 export default function Home() {

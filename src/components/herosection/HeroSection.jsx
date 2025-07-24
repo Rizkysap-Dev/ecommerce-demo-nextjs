@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Container from "../Container";
 import { motion } from "framer-motion";
+import UnderlineButton from "../ui/UnderlineButton";
 
 const headingText = "QUNIX.";
 
@@ -15,7 +15,6 @@ const HeroSection = () => {
           backgroundImage:
             "url(https://images.unsplash.com/photo-1747823179083-e1b436263415?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         }}>
-        {/* <div className="absolute inset-0 bg-black opacity-20"></div> */}
         <div className="flex flex-col justify-start items-start h-[70%] w-[35%] pl-14 mt-[160px]">
           <div className="flex justify-start items-center h-13 overflow-hidden mb-3">
             {headingText.split("").map((char, index) => {
@@ -49,8 +48,16 @@ const HeroSection = () => {
               delay: 0.5,
             }}
             className="text-2xl font-playfair leading-tight tracking-tighter text-justify font-medium text-gray-800">
-            -- Fashion is the silent language that lets your soul shine.
+            -- Fashion is the silent language that lets your soul shine,Casual
+            fashion, effortlessly cool.
           </motion.h1>
+          <div className="mt-5 pl-1">
+            <UnderlineButton
+              className={"text-sm font-light text-gray-700"}
+              href={"/shop"}>
+              Shop Now
+            </UnderlineButton>
+          </div>
         </div>
       </div>
     </div>
