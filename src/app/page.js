@@ -10,9 +10,12 @@ export default function Home() {
         <section className="pt-26">
           <HeroSection />
         </section>
-        <section>
+        <div className="h-screen">
+
+        <section className="pt-10">
           <HighlightSection />
         </section>
+        </div>
       </Layout>
     </div>
   );

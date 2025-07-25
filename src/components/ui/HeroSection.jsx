@@ -8,7 +8,7 @@ const headingText = "QUNIX.";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full overflow-hidden h-[520px] md:h-[600px] lg:h-[690px] rounded-lg">
+    <div className="relative w-full overflow-hidden h-[580px] md:h-[600px] lg:h-[690px] rounded-lg">
       <div
         className="absolute inset-0 bg-cover bg-center w-full"
         style={{
@@ -17,7 +17,7 @@ const HeroSection = () => {
         }}>
         
         <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-white/10 md:bg-none z-0"></div>
-        <div className="relative flex flex-col justify-start items-start h-[70%] w-[70%] sm:w-[50%] md:w-[40%] lg:w-[40%] px-4 sm:pl-8 md:pl-12 lg:pl-14 mt-32 sm:mt-28 md:mt-[120px] lg:mt-[160px]">
+        <div className="relative flex flex-col justify-start items-start h-[70%] w-[70%] sm:w-[50%] md:w-[40%] lg:w-[40%] px-4 sm:pl-8 md:pl-12 lg:pl-14 mt-30 sm:mt-28 md:mt-[120px] lg:mt-[160px]">
           <div className="flex justify-start items-center h-13 overflow-hidden mb-1 sm:mb-3">
             {headingText.split("").map((char, index) => {
               return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, scale, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const headingText = "QUNIX.";
@@ -23,7 +23,7 @@ const SplashScreen = ({ onFinish }) => {
       transition={{ duration: 1, delay: 0.5 }}
       onAnimationComplete={onFinish}
       className="fixed inset-0 bg-white z-50 flex justify-center items-center h-screen">
-      <div className="flex items-center justify-center md:h-40 lg:h-48 space-y-2 md:space-x-2 overflow-hidden">
+      <div className="flex items-center justify-center md:h-40 lg:h-40 space-y-2 md:space-x-2 overflow-hidden">
         {headingText.split("").map((char, index) => {
           return (
             <motion.h1
