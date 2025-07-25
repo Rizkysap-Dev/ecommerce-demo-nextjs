@@ -11,7 +11,7 @@ const HighlightSection = () => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 my-10 md:my-20 rounded-lg px-6 sm:px-8 md:px-10 py-10 md:py-20 overflow-hidden gap-8 md:gap-0"
+      className="grid grid-cols-1 md:grid-cols-3 bg-gray-100 my-10 md:my-20 rounded-lg px-6 sm:px-8 md:px-10 py-10 md:py-20 overflow-hidden gap-8 md:gap-0"
       initial={{ scale: 0.95, opacity: 0 }}
       animate={isInView ? { scale: 1, opacity: 1 } : {}}
       transition={{ duration: 0.7, ease: [0.17, 0.55, 0.55, 1] }}
@@ -22,8 +22,8 @@ const HighlightSection = () => {
           opacity: isInView ? 1 : 0,
           transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
-        className="w-[60%]">
-        <h2 className=" font-sans font-semibold text-lg text-gray-900">
+        className="w-full md:w-[90%] lg:w-[80%] mx-auto md:mx-0 col-span-1">
+        <h2 className="font-sans font-semibold text-lg text-gray-900">
           Explore a variety of shirts crafted for comfort and style. Whether you
           prefer timeless classics or modern designs.
         </h2>
@@ -35,12 +35,21 @@ const HighlightSection = () => {
           </UnderlineButton>
         </div>
       </div>
+      <motion.div
+        className="block md:hidden h-px w-full bg-gray-300 mx-auto my-1"
+        initial={{ scaleX: 0, opacity: 0 }}
+        animate={isInView ? { scaleX: 1, opacity: 1 } : {}}
+        transition={{ duration: 0.7, delay: 0.3, ease: [0.17, 0.55, 0.55, 1] }}
+        style={{ originX: 0 }}
+      />
       <div
         style={{
           transform: isInView ? "none" : "translateX(200px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}>
+        }}
+        className="w-full md:w-[90%] lg:w-[80%] mx-auto md:mx-0 col-span-1"
+      >
         <h1 className="text-2xl font-semibold">
           <span className="font-playfair text-2xl font-semibold">
             — Giorgio Armani,{" "}
