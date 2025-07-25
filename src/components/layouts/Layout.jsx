@@ -36,7 +36,9 @@ const Layout = ({ children }) => {
           <div
             className={`fixed top-0 left-0 w-full z-20 bg-white transition-shadow duration-300 ${
               scrolled ? "shadow-md" : ""
-            }`}>
+            }`}
+            style={{ marginTop: 0, paddingTop: 0, top: 0 }}
+          >
             <Navbar />
           </div>
           <Container>{children}</Container>

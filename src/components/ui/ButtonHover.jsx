@@ -10,10 +10,15 @@ const ButtonHover = ({ children, href, Content, className }) => {
 
   return (
     <div
+      className="w-full"
       onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      className="group h-fit w-fit hover:bg-gray-200 rounded-sm transition px-3 py-1">
-      <button className={className} href={href}>
+      onMouseLeave={() => setOpen(false)}>
+      <button
+        className={`text-base md:text-lg px-4 py-1 rounded-md transition 
+          md:bg-transparent md:border-none 
+          border border-gray-300 w-full md:w-fit
+          ${className}`}
+        href={href}>
         {children}
       </button>
       {showDropdown && (

@@ -4,8 +4,8 @@ import Link from "next/link";
 const ListLink = ({ items }) => {
   return (
     <>
-      {items.map((item) => (
-        <div key={item.title}>
+      {items.map((item, idx) => (
+        <div key={item.title} className={idx !== items.length - 1 ? "mb-4 pb-4 border-b border-gray-200" : "mb-4 pb-4"}>
           <h3 className="text-lg font-playfair font-extrabold mb-2 px-2 tracking-wider ">
             {item.title}
           </h3>
