@@ -11,7 +11,7 @@ const HighlightSection = () => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 md:grid-cols-3 bg-gray-100 my-10 md:my-20 rounded-lg px-6 sm:px-8 md:px-10 py-10 md:py-20 overflow-hidden gap-8 md:gap-0"
+      className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 my-10 md:my-20 rounded-lg px-6 sm:px-8 md:px-10 py-10 md:py-20 overflow-hidden gap-8 md:gap-0"
       initial={{ scale: 0.95, opacity: 0 }}
       animate={isInView ? { scale: 1, opacity: 1 } : {}}
       transition={{ duration: 0.7, ease: [0.17, 0.55, 0.55, 1] }}
